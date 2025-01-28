@@ -99,9 +99,10 @@ cc_binary {
     },
 }
 
-cc_binary_host {
+cc_binary {
     name: "lpmake",
     defaults: ["lp_defaults"],
+    host_supported: true,
     shared_libs: [
         "libbase",
         "liblog",
@@ -112,9 +113,10 @@ cc_binary_host {
     ],
 }
 
-cc_binary_host {
+cc_binary {
     name: "lpadd",
     defaults: ["lp_defaults"],
+    host_supported: true,
     shared_libs: [
         "libbase",
         "liblog",
@@ -158,9 +160,10 @@ cc_binary {
     ],
 }
 
-cc_binary_host {
+cc_binary {
     name: "lpunpack",
     defaults: ["lp_defaults"],
+    host_supported: true,
     shared_libs: [
         "libbase",
         "liblog",
